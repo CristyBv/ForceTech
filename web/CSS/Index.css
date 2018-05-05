@@ -1,0 +1,139 @@
+@font-face {
+    font-family: ForceTechFont;
+    src: url("/FONTS/Capsule X Pro Medium UC.otf");
+}
+
+body{
+    background-image: url("/IMG/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p1, p{
+    font-family: ForceTechFont;
+    color: black;
+}
+p{
+    text-align:left;
+}
+
+button , #submit{
+    font-family: ForceTechFont;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+button:hover, #submit:hover{
+    background-color: white;
+    color:black;
+}
+#logo{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: fadein 10s;
+    -moz-animation: fadein 10s;
+    -ms-animation: fadein 10s;
+    -o-animation: fadein 10s;
+    animation: fadein 10s;
+}
+@keyframes fadein {
+    0%{
+        opacity: 0;
+        }
+    25%{
+        opacity:0.25;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity:0.75;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity:0.25;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity:0.75;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity:0.25;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity:0.75;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@-ms-keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity:0.25;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity:0.75;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity:0.25;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity:0.75;
+    }
+    100%{
+        opacity:1;
+    }
+}
+

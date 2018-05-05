@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>logare</servlet-name>
+        <servlet-class>com.servlets.logare</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>inregistrare</servlet-name>
+        <servlet-class>com.servlets.inregistrare</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>com.servlets.logout</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>profile</servlet-name>
+        <servlet-class>com.servlets.profile</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>logare</servlet-name>
+        <url-pattern>/logare</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>inregistrare</servlet-name>
+        <url-pattern>/inregistrare</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>profile</servlet-name>
+        <url-pattern>/securityprofile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>profile</servlet-name>
+        <url-pattern>/personalprofile</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>logFilter</filter-name>
+        <filter-class>com.filters.logFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>logFilter</filter-name>
+        <url-pattern>/welcome.jsp</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>logFilter</filter-name>
+        <url-pattern>/welcome2.jsp</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>logFilter</filter-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>profileFilter</filter-name>
+        <filter-class>com.filters.profileFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>profileFilter</filter-name>
+        <url-pattern>/profile.jsp</url-pattern>
+    </filter-mapping>
+
+</web-app>
